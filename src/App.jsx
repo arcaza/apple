@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+
+import HomePage from "./pages/HomePage";
+import StorePage from "./pages/StorePage";
+import MacPage from "./pages/MacPage";
+import IpadPage from "./pages/IpadPage";
+import WatchPage from "./pages/WatchPage";
+import VisionPage from "./pages/VisionPage";
+import AirpodsPage from "./pages/AirpodsPage";
+import TvHomePage from "./pages/TvHomePage";
+import ServicesPage from "./pages/ServicesPage";
+import AccessoriesPage from "./pages/AccessoriesPage";
+import SupportPage from "./pages/SupportPage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="min-h-screen">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/store" element={<StorePage />} />
+        <Route path="/mac" element={<MacPage />} />
+        <Route path="/ipad" element={<IpadPage />} />
+        <Route path="/watch" element={<WatchPage />} />
+        <Route path="/vision" element={<VisionPage />} />
+        <Route path="/airpods" element={<AirpodsPage />} />
+        <Route path="/tv-home" element={<TvHomePage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/accessories" element={<AccessoriesPage />} />
+        <Route path="/support" element={<SupportPage />} />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
