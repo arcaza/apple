@@ -13,9 +13,12 @@ import ServicesPage from "./pages/ServicesPage";
 import AccessoriesPage from "./pages/AccessoriesPage";
 import SupportPage from "./pages/SupportPage";
 
+import IPhone16e from "./sections/IPhone16e.temp";
+
 function App() {
   return (
     <div className="min-h-screen">
+      {/* navbar stuff */}
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -30,6 +33,9 @@ function App() {
         <Route path="/accessories" element={<AccessoriesPage />} />
         <Route path="/support" element={<SupportPage />} />
       </Routes>
+
+      {/* main stuff */}
+      <IPhone16e />
     </div>
   );
 }
