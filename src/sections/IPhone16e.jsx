@@ -12,7 +12,6 @@ const IPhone16e = () => {
         />  
       </Link>
          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid place-items-center gap-1'>
-        {/* <div className='grid place-items-center gap-1'> */}
             <h1 className='text-5xl font-bold'>iPhone 16<span className='bg-gradient-to-r from-sky-500 via-purple-500 to-amber-600 bg-clip-text text-transparent'>e</span></h1>
             <h2 className='text-3xl'>Latest iPhone. Greatest Price</h2>
             <h3 className='text-stone-600 text-xl'>Available starting 2.28</h3>

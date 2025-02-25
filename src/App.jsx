@@ -15,12 +15,23 @@ import SupportPage from "./pages/SupportPage";
 
 import IPhone16e from "./sections/IPhone16e";
 import IPhone16ePage from "./pages/IPhone16ePage";
-
 import IPhone16pro from "./sections/IPhone16pro";
 import IPhone16proPage from './pages/IPhone16proPage'
-
 import IPhone16 from "./sections/IPhone16";
 import IPhone16Page from "./pages/IPhone16Page";
+
+import AppleWatchSeries10Page from "./pages/AppleWatchSeries10Page";
+import AppleWatchSeries10 from "./sections/AppleWatchSeries10";
+import AppleWatchBand from "./sections/AppleWatchBand";
+import AppleWatchBandPage from "./pages/AppleWatchBandPage";
+import IPadPro from "./sections/IPadPro";
+import IPadProPage from "./pages/IPadProPage";
+import MacBookAir from "./sections/MacBookAir";
+import MacBookAirPage from "./pages/MacBookAirPage";
+import TradeInPage from "./pages/TradeInPage";
+import TradeIn from "./sections/TradeIn";
+import AppleCardPage from "./pages/AppleCardPage";
+import AppleCard from "./sections/AppleCard";
 
 
 function App() {
@@ -29,6 +40,7 @@ function App() {
       {/* navbar stuff */}
       <Navbar />
       <Routes>
+        {/* navbar */}
         <Route path="/" element={<HomePage />} />
         <Route path="/store" element={<StorePage />} />
         <Route path="/mac" element={<MacPage />} />
@@ -41,9 +53,21 @@ function App() {
         <Route path="/accessories" element={<AccessoriesPage />} />
         <Route path="/support" element={<SupportPage />} />
 
+        {/* main */}
         <Route path="/iphone16-e" element={<IPhone16ePage />} />
         <Route path="/iphone16-pro" element={<IPhone16proPage />} />
         <Route path="/iphone16" element={<IPhone16Page />} />
+
+        {/* grid main */}
+        <Route path="/apple-watch-series-10" element={<AppleWatchSeries10Page />}/>
+        <Route path="/apple-watch-band" element={<AppleWatchBandPage />}/>
+        <Route path="/ipad-pro" element={<IPadProPage />}/>
+        <Route path="/macbook-air" element={<MacBookAirPage />}/>
+        <Route path="/shop/trade-in" element={<TradeInPage />}/>
+        <Route path="/macbook-air" element={<MacBookAirPage />}/>
+        <Route path="/apple-card" element={<AppleCardPage />}/>
+        
+
       </Routes>
 
       {/* main stuff */}
@@ -51,12 +75,12 @@ function App() {
       <IPhone16pro />
       <IPhone16 />
       <div className="grid grid-cols-2">
-        <div>test 1</div>
-        <div>test 2</div>
-        <div>test 3</div>
-        <div>test 4</div>
-        <div>test 5</div>
-        <div>test 6</div>
+        <AppleWatchSeries10 />
+        <AppleWatchBand />
+        <IPadPro />
+        <MacBookAir />
+        <TradeIn />
+        <AppleCard />
       </div>
     </div>
   );

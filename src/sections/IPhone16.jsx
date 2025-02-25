@@ -11,7 +11,6 @@ const IPhone16 = () => {
         />  
       </Link>
          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid place-items-center gap-1 text-white'>
-        {/* <div className='grid place-items-center gap-1'> */}
             <h1 className='text-5xl font-bold'>iPhone 16</h1>
             <h2 className='text-3xl'>Hello, Apple Intelligence.</h2>
             <div className='flex justify-center gap-4 pt-1'>
