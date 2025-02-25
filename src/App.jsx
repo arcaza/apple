@@ -32,12 +32,13 @@ import TradeInPage from "./pages/TradeInPage";
 import TradeIn from "./sections/TradeIn";
 import AppleCardPage from "./pages/AppleCardPage";
 import AppleCard from "./sections/AppleCard";
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
     <div className="min-h-screen">
-      {/* navbar stuff */}
+      {/* navbar setup */}
       <Navbar />
       <Routes>
         {/* navbar */}
@@ -70,10 +71,12 @@ function App() {
 
       </Routes>
 
-      {/* main stuff */}
+      {/* main content */}
       <IPhone16e />
       <IPhone16pro />
       <IPhone16 />
+
+      {/* grid content */}
       <div className="grid grid-cols-2">
         <AppleWatchSeries10 />
         <AppleWatchBand />
@@ -82,6 +85,29 @@ function App() {
         <TradeIn />
         <AppleCard />
       </div>
+
+      {/* TODO */}
+      {/* slideshow */}
+      <div className="wrapper flex justify-center">
+        <div className="">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/3pfG0GJkoI0OFlPiIDdvUQ/1250x703.jpg"/>
+        </div>
+        {/* <div className="">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/EUeDAPovZrBtOcrP2Da5Lw/1250x703.jpg"/>
+        </div>
+        <div className="">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/5tQkYfzU9bSMUol0GajO4w/1250x703.jpg"/>
+        </div> */}
+        <div className="inline-block h-2 w-2 rounded-full bg-neutral-500 m-2 hover:bg-neutral-600"></div>
+        <div className="inline-block h-2 w-2 rounded-full bg-neutral-500 m-2 hover:bg-neutral-600"></div>
+        <div className="inline-block h-2 w-2 rounded-full bg-neutral-500 m-2 hover:bg-neutral-600"></div>
+        <div className="inline-block h-2 w-2 rounded-full bg-neutral-500 m-2 hover:bg-neutral-600"></div>
+        <div className="inline-block h-2 w-2 rounded-full bg-neutral-500 m-2 hover:bg-neutral-600"></div>
+      </div>
+
+      {/* footer */}
+      <Footer />
+
     </div>
   );
 }
