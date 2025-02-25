@@ -47,7 +47,7 @@ const Navbar = () => {
         <nav className="flex mt-3 justify-around">
           <div className=" text-sm">
             <h5 className="mb-3 text-neutral-500">Shop</h5>
-            <div className="text-black text-2xl font-semibold mb-4">
+            <div className="text-neutral-900 text-2xl font-semibold mb-4">
               <h3>Shop the Latest</h3>
               <h3>Mac</h3>
               <h3>iPad</h3>
