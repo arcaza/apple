@@ -10,8 +10,8 @@ const Navbar = () => {
   const [isStoreHoverVisible, setIsStoreHoverVisible] = useState(false);
 
   return (
-    <div>
-      <header className="content-center text-black fixed top-0 left-0 z-50 bg-white w-full py-3">
+    <div className="">
+      <header className="content-center text-black fixed top-0 left-0 z-50 bg-white/95 w-full py-3">
         <nav className="flex flex-wrap justify-center space-x-8 text-sm font-extralight">
           <Link to="/" className="">
             <FaApple className="text-xl"/>
@@ -40,7 +40,7 @@ const Navbar = () => {
         </nav>
       </header>
       <div 
-        className={`storeHover ${isStoreHoverVisible ? 'block' : 'hidden'} fixed top-0 left-0 z-50 mt-[44px] bg-white w-screen`}
+        className={`storeHover ${isStoreHoverVisible ? 'block' : 'hidden'} fixed top-0 left-0 z-50 mt-[44px] bg-white/95 w-screen`}
         onMouseEnter={() => setIsStoreHoverVisible(true)}
         onMouseLeave={() => setIsStoreHoverVisible(false)}
       >
