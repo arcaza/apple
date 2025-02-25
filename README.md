@@ -1,4 +1,4 @@
-# React + Vite
+![immagine](https://github.com/user-attachments/assets/e1db43d2-e3bb-4354-8f52-ecdbfb9dee30)# React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -9,3 +9,11 @@ Currently, two official plugins are available:
 
 Trying to recreate the apple main page as a beginner
 https://www.apple.com/
+
+current status
+![immagine](https://github.com/user-attachments/assets/3c5c6036-a911-43fc-b1af-8e2bb58ebd57)
+
+![immagine](https://github.com/user-attachments/assets/7c627fd9-4859-43c1-a5da-d3da0b508268)
+
+![immagine](https://github.com/user-attachments/assets/8b8e79cd-aae5-4a18-99a4-f18241d0bc69)
+
