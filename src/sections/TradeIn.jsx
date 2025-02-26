@@ -15,7 +15,6 @@ const TradeIn = () => {
             <h1 className='text-4xl font-bold flex text-black'><FaApple />Trade in</h1>
             <h3 className='text-xl pb-1'>Get $180-$650 in credit when <br /> you trade in iPhone 12 or higher.<sup className='text-[10px]'>1</sup></h3>
             <button className='border border-blue-600 text-blue-600 rounded-full p-2 hover:bg-blue-600 hover:text-white px-4 mt-3'>Get your estimate</button>
-    
       </div>
     </div>
   )

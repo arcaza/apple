@@ -88,16 +88,16 @@ function App() {
 
       {/* TODO */}
       {/* slideshow */}
-      <div className="wrapper flex justify-center">
+      <div className="wrapper whitespace-nowrap block">
         <div className="">
           <img src="https://is1-ssl.mzstatic.com/image/thumb/3pfG0GJkoI0OFlPiIDdvUQ/1250x703.jpg"/>
         </div>
-        {/* <div className="">
+        <div className="">
           <img src="https://is1-ssl.mzstatic.com/image/thumb/EUeDAPovZrBtOcrP2Da5Lw/1250x703.jpg"/>
         </div>
         <div className="">
           <img src="https://is1-ssl.mzstatic.com/image/thumb/5tQkYfzU9bSMUol0GajO4w/1250x703.jpg"/>
-        </div> */}
+        </div> 
         <div className="inline-block h-2 w-2 rounded-full bg-neutral-500 m-2 hover:bg-neutral-600"></div>
         <div className="inline-block h-2 w-2 rounded-full bg-neutral-500 m-2 hover:bg-neutral-600"></div>
         <div className="inline-block h-2 w-2 rounded-full bg-neutral-500 m-2 hover:bg-neutral-600"></div>
